@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narutopedia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Adicionando Font Awesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ninja+Naruto&display=swap" rel="stylesheet">
+</head>
+<body class="bg-cover bg-center bg-fixed">
+
+    <div class="flex flex-col min-h-screen">
+        <!-- Cabeçalho -->
+        <header class="header-bg p-4 shadow-lg sticky top-0 z-20">
+            <div class="container mx-auto flex justify-between items-center">
+                <h1 class="text-2xl sm:text-4xl text-orange-400 naruto-font tracking-widest">NARUTO WIKIPEDIA</h1>
+                <!-- Links do Criador -->
+                <div class="flex items-center gap-4">
+                    <a href="#" title="Discord: mxrcus._" target="_blank" rel="noopener noreferrer" class="text-white hover:text-orange-400 transition-colors duration-300">
+                        <i class="fab fa-discord text-2xl"></i>
+                    </a>
+                    <a href="https://github.com/Marcus-DevPython" title="GitHub" target="_blank" rel="noopener noreferrer" class="text-white hover:text-orange-400 transition-colors duration-300">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <main class="flex-grow container mx-auto p-4 flex flex-col items-center justify-center">
+            <div class="w-full max-w-2xl text-center">
+                <div class="search-container p-8 rounded-xl shadow-2xl">
+                    <h2 class="text-5xl md:text-6xl text-white naruto-font mb-2 tracking-wider" style="text-shadow: 2px 2px 4px #000;">NARUTO WIKIPEDIA</h2>
+                    <p class="text-white text-lg mb-6" style="text-shadow: 1px 1px 2px #000;">Tudo sobre Naruto em um só lugar</p>
+
+                    <!-- Barra de Pesquisa com Sugestões -->
+                    <div class="relative mb-4">
+                        <input type="text" id="searchInput" class="w-full p-3 rounded-lg text-gray-800 bg-white bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder="Qual é o seu ninja favorito?">
+                        <div id="suggestions" class="absolute left-0 right-0 bg-white rounded-b-lg shadow-lg text-left overflow-hidden z-10"></div>
+                    </div>
+
+                    <!-- Botões -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button id="searchButton" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 shadow-lg">Pesquisar</button>
+                        <button id="clearButton" class="bg-gray-700 hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 shadow-lg">Limpar Pesquisa</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Área de Resultados -->
+            <div id="result" class="w-full max-w-4xl mt-10">
+                <!-- O cartão do personagem será inserido aqui -->
+            </div>
+             <p class="text-white text-xs mt-4 text-center">
+                <strong>Aviso:</strong> Os dados obtidos são da pagina Naruto Fandom e podem não estar atualizados,
+                sempre atualize o banco de dados!
+             </p>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
