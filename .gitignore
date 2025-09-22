@@ -1,0 +1,9 @@
+# Ignorar a pasta de dependências do Node.js
+node_modules
+
+# Arquivo de banco de dados local
+characters-db.json
+
+# Arquivos de log e de ambiente (se houver)
+.env
+npm-debug.log
