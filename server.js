@@ -12,7 +12,7 @@ const PORT = 3000;
 app.use(cors());
 
 // Caminho para o nosso banco de dados local
-const dbPath = path.join(__dirname, '/db_characters/characters-db.json');
+const dbPath = path.join(__dirname, 'db_characters/characters-db.json');
 let charactersData = [];
 
 // Tenta carregar os dados do banco de dados na inicialização do servidor
