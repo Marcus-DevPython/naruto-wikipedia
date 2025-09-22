@@ -10,7 +10,7 @@ const path = require('path');
  */
 const scrapeAndSaveCharacters = async () => {
     try {
-        const dbPath = path.join(__dirname, '/db_characters/characters-db.json');
+        const dbPath = path.join(__dirname, 'db_characters/characters-db.json');
         let existingCharacters = [];
 
         // 1. Carrega os personagens já existentes, se o arquivo existir

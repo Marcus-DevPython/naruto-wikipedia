@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const defaultBackground = 'background.jpg'; // Fundo padrão
+    const defaultBackground = 'custom/background.jpg'; // Fundo padrão
     const searchInput = document.getElementById('searchInput');
     const suggestionsDiv = document.getElementById('suggestions');
     const resultDiv = document.getElementById('result');
